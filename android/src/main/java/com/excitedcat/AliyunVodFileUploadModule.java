@@ -76,7 +76,7 @@ public class AliyunVodFileUploadModule extends ReactContextBaseJavaModule {
                 params.putDouble("uploadedSize", uploadedSize);
                 params.putDouble("totalSize", totalSize);
                 params.putDouble("progress", (float) uploadedSize / totalSize);
-                sendEvent(reactContext, "OnUploadProgress", params);
+                sendEvent(reactContext, "onUploadProgress", params);
             }
 
             public void onUploadTokenExpired() {

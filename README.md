@@ -2,7 +2,7 @@
 
 ## Getting started
 
-`$ npm install @kangfenmao/react-native-aliyun-vod-upload`
+`$ npm install react-native-aliyun-video-upload`
 
 ### iOS
 
@@ -21,10 +21,26 @@ repositories {
 }
 ```
 
+Add aliyun repo to `android/app/AndroidManifest.xml`
+```xml
+<manifest 
+    xmlns:android="http://schemas.android.com/apk/res/android" 
++++ xmlns:tools="http://schemas.android.com/tools"
+>
+  <application
+        android:name=".MainApplication"
+        android:allowBackup="false"
++++     tools:replace="android:allowBackup"
++++     tools:node="replace"
+    ...>
+    </application>
+</manifest>
+```
+
 ## Usage
 
 ```javascript
-import { AliyunVodFileUpload, AliyunVodFileUploadEmitter } from 'react-native-aliyun-vod-upload'
+import { AliyunVodFileUpload, AliyunVodFileUploadEmitter } from 'react-native-aliyun-video-upload'
 
 // Init
 AliyunVodFileUpload.init(

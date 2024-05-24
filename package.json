@@ -1,7 +1,7 @@
 {
   "name": "react-native-aliyun-video-upload",
   "title": "React Native Aliyun video Upload",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "阿里云视频点播上传 React Native 版 SDK",
   "main": "index.js",
   "scripts": {
@@ -36,5 +36,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "dependencies": {}
 }
